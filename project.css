@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    cursor:pointer;
+    font-family: "RALEWAY", serif;
+}
+@font-face {
+    font-family: "Azonix";
+    src: url(fonts/AZONIX.OTF) format(truetype);
+}
+@font-face {
+    font-family: "RALEWAY";
+    src: url(fonts/RALEWAY-MEDIUM.TTF) format(truetype);
+}
+
+.wrapper{
+    max-height: 100vh;
+    display: flex;
+    overflow-x: auto;
+}
+.item{
+    height: 100vh;
+    width: 100wh;
+    margin-left: 7%;
+}
+.item_img {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
