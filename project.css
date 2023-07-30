@@ -17,19 +17,58 @@ a {
     src: url(fonts/RALEWAY-MEDIUM.TTF) format(truetype);
 }
 
-.wrapper{
-    max-height: 100vh;
-    display: flex;
-    overflow-x: auto;
-}
-.item{
-    height: 100vh;
-    width: 100wh;
-    margin-left: 7%;
-}
-.item_img {
-    height: 100%;
-    background-position: center;
-    background-size: cover;
 
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+body {
+  background: #fff;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 840px;
+  max-height: 2521px;
+  margin: 0;
+  padding-top: 1px;
+  background: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-900px);
+  transform-origin: right top;
+}
+.horizontal-scroll-wrapper > div {
+  display: block;
+  background: #111;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
+.squares {
+  padding: 1080px 0 0 0;
+}
+.squares > div {
+  width: 900px;
+  height: 900px;
+  margin: 10px 0;
+}
+
+.item_img{
+  background-size: contain;
+  width: 100%;
+  height: 100%;
 }
