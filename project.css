@@ -47,14 +47,14 @@ div {
 }
 
 body {
-  background: #111;
+  background: #fff;
 }
 
 div {
   box-sizing: border-box;
 }
 
-.horizontal-scroll-wrapper {
+/* .horizontal-scroll-wrapper {
   position: absolute;
   display: block;
   top: 0;
@@ -88,4 +88,40 @@ div {
 .item_img{
   width: 100%;
   height: 100%;
+} */
+
+.horizontal-scroll-wrapper{
+  position:absolute;
+  display:block;
+  top:0;
+  left:0;
+  width:800px;
+  max-height:2120px;
+  margin:0;
+  /* background:#abc; */
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:rotate(-90deg) translateY(-800px);
+  transform-origin:right top;
+}
+
+.rectangles{
+  
+  padding:1200px 0 0 0;
+}
+.item{
+  width:1000px;
+  height:700px;
+  margin-top: 40px;
+  margin-bottom: 500px;
+  border: 1px solid black;
+  /* padding:5px; */
+  /* background:#cab; */
+  transform:rotate(90deg) translateY(250px);
+  transform-origin: right top;
+}
+
+.item_img{ 
+  width: 100%;
+  background-size: cover;
 }
