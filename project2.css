@@ -59,15 +59,15 @@ a {
     color: black;
 }
 .hero_content_box_1:hover {
-    background-color: #5d4da8;
+    background-color: #252525;
     transition: .5s all;
 }
 .hero_content_box_2:hover {
-    background-color: #333;
+    background-color: #252525;
     transition: .5s all;
 }
 .hero_content_box_3:hover {
-    background-color: #9c3838;
+    background-color: #252525;
     transition: .5s all;
 }
 .hero_content_number{
